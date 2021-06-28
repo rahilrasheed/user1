@@ -6,11 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        .rr{
+            width: 300px;
+            height: 370px;
+            background-color:rgba(245, 245, 245, 0.308);
+            margin-left: 500px;
+            margin-top: 140px;
+            /* 
+            margin-right: 400px;
+            
+            
+            border-top: 200px; */
+        }
+            .inc{
+                background-image:url("{% static 'images/website.jpg' %}" );
+                background-repeat:no-repeat ;
+                background-size: cover;
+            }
+            .nn{
+                width: 125px;
+                margin-top: 60px;
+                margin-left: 90px;
+                border-radius: 70px;
+            }
+
+            .oo{
+                margin-left: 65px;
+                margin-top: 25px;
+                width: 170px;
+                height: 25px;
+                border: none;
+                background-color: whitesmoke;
+            }
+            .pp{
+                margin-left: 65px;
+                margin-top: 5px;
+                width: 170px;
+                height: 25px;
+                border: none;
+                background-color: whitesmoke;
+            }
+            .bu{
+                width: 300px;
+                margin-top: 20px;
+                height: 35px;
+                border: none;
+                background-color: darkkhaki;
+            
+            
+
+    </style>
 </head>
-<body>
-    <h1>top heading</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nesciunt vel deserunt eaque ducimus corporis molestiae doloremque est, temporibus error et atque enim reiciendis libero, tempora earum quasi adipisci aperiam.</p>
-<img src="{% static 'images/insta.jpg' %}">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores debitis, labore perspiciatis ducimus illum cupiditate iste accusamus repellat! Eos quos repellendus aliquid consectetur ipsum deserunt facere saepe architecto recusandae!</p>
+
+<body class="inc">
+    <div class="rr" >
+        <img class="nn" src="{% static 'images/sa.jpg' %}">
+        <input class="oo" type="text" required placeholder="username or email" type="email" required >
+        <input class="pp" type="password" required placeholder="password">
+        <br>
+        <button class="bu">login</button>
+    </div>
 </body>
-</html>  
+</html>
