@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lo{
+            width: 250px;
+            height: 150px;
+        }
+        li{
+           
+            display: inline;
+            margin: 10px;
+        }
+        a:hover{
+            background-color: orange;
+            border: 9px solid orange;
+            border-radius: 3px;
+            
+        }
+        .li{
+            
+            margin-top: -10%;
+            margin-left: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <img class="lo" src="{% static 'images/logo.jpg' %}">  
+    </div>
+    <div class="li">
+        <ul>
+            <li>
+                <a href="#home">HOME</a>
+            </li>
+            <li>
+                <a href="#servise">SERVISE</a>
+            </li>
+            <li>
+                <a href="#contact">CONTACT</a>
+            </li>
+            <li>
+                <button type="submit">ENQUIRE </button>
+            </li>
+        </ul>
+        <img src=""
+    </div>
+</body>
+</html>
