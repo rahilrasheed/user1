@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+  <!-- inline -->
+    <button onclick="alert('hi welcome to javascript')">click me</button>
+  <!-- internal -->
+    <script>
+        alert("hi iam rahil")
+    </script>
+  <!-- external -->
+    <script src="{% static 'java/j1.js' %}"></script>
+  <!--console  -->
+   <script>
+       console.log("rahil")
+       document.write("its rahil")
+   </script>
+</body>
+</html>

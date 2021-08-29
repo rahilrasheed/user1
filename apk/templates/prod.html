@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+           width: 50px;
+           height: 100px; 
+        }
+        .d1{
+            display: grid;
+            grid-template-columns: 200px  300px;
+            grid-template-rows: 300px  300px;
+            gap: 30px;
+        }
+        .ce{
+            text-align: center;
+        }
+        .vi{
+            width: 600px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <div class="ce" style="background-color: chartreuse;" >
+            <img src="{% static 'images/bas.jpg' %}">
+            <h3>pro</h3>
+            <p>hqsuocewbvuewbcb</p>
+            <button type="submit">buy</button>
+        </div>
+        <div class="ce" style="background-color: chocolate;" >
+            <img src="{% static 'images/bd.jpg' %}">
+            <h3>pro</h3>
+            <p>hqsuocewbvuewbcb</p>
+            <button type="submit">buy</button>
+        </div>
+        <div  class="ce" style="background-color: rgb(20, 18, 18)," >
+            <img src="{% static 'images/cr.jpg' %}">
+            <h3>pro</h3>
+            <p>hqsuocewbvuewbcb</p>
+            <button type="submit">buy</button>
+        </div>
+        <div class="ce" style="background-color: cyan;" >
+            <img src="{% static 'images/ft.jpg' %}">
+            <h3>pro</h3>
+            <p>hqsuocewbvuewbcb</p>
+            <button type="submit">buy</button>
+        </div>
+    </div>
+    <div>
+        <video class="vi" src="{% static 'videos/be.mp4' %}" controls></video>
+        <audio src="{% static 'audio/th.mp3'%}" controls></audio><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sKpSPyYMqFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15640.59109343434!2d75.9626697006438!3d11.469257748360134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba66eb858dd9541%3A0xb865737936941d1d!2sEngapuzha%2C%20Kedavur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1625641849613!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PRk9BMjxaT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    </div>
+</body>
+</html
